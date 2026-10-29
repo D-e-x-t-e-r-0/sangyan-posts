@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800">
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#7c1522" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f5d7c" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#2f5d7c" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="800" fill="#f4ebd7"/>
+  <rect width="1600" height="800" fill="url(#grid)"/>
+  <rect x="32" y="32" width="1536" height="736" fill="none" stroke="#7c1522" stroke-opacity="0.2"/>
+
+  <g stroke="#7c1522" stroke-opacity="0.1">
+    <line x1="680" y1="220" x2="1520" y2="220"/>
+    <line x1="680" y1="320" x2="1520" y2="320"/>
+    <line x1="680" y1="420" x2="1520" y2="420"/>
+    <line x1="680" y1="520" x2="1520" y2="520"/>
+    <line x1="680" y1="620" x2="1520" y2="620"/>
+  </g>
+
+  <path d="M 700 604 L 820 566 L 930 588 L 1030 512 L 1140 534 L 1250 448 L 1350 468 L 1460 366 L 1520 382 L 1520 680 L 700 680 Z" fill="url(#area)"/>
+  <path d="M 700 604 L 820 566 L 930 588 L 1030 512 L 1140 534 L 1250 448 L 1350 468 L 1460 366 L 1520 382" fill="none" stroke="#2f5d7c" stroke-width="2.5"/>
+  <circle cx="1460" cy="366" r="7" fill="#7c1522"/>
+  <circle cx="1460" cy="366" r="18" fill="none" stroke="#7c1522" stroke-opacity="0.4"/>
+  <line x1="1460" y1="366" x2="1460" y2="680" stroke="#7c1522" stroke-opacity="0.28" stroke-dasharray="3 6"/>
+  <line x1="680" y1="680" x2="1520" y2="680" stroke="#7c1522" stroke-opacity="0.3"/>
+
+  <g fill="#7c1522" fill-opacity="0.22">
+    <rect x="700" y="664" width="18" height="6"/>
+    <rect x="870" y="664" width="18" height="6"/>
+    <rect x="1040" y="664" width="18" height="6"/>
+    <rect x="1210" y="664" width="18" height="6"/>
+    <rect x="1380" y="664" width="18" height="6"/>
+  </g>
+</svg>

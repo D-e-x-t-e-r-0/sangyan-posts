@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#7c1522" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f5d7c" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#2f5d7c" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="#f4ebd7"/>
+  <rect width="1200" height="800" fill="url(#grid)"/>
+  <rect x="24" y="24" width="1152" height="752" fill="none" stroke="#7c1522" stroke-opacity="0.22"/>
+
+  <text x="48" y="64" font-family="Courier New, monospace" font-size="14" letter-spacing="4.5" fill="#7c1522">SANGYAN / DISPATCHES</text>
+  <text x="1152" y="64" text-anchor="end" font-family="Courier New, monospace" font-size="14" letter-spacing="4.5" fill="#7c1522">STR / 005</text>
+  <line x1="48" y1="92" x2="1152" y2="92" stroke="#7c1522" stroke-opacity="0.24"/>
+
+  <g stroke="#7c1522" stroke-opacity="0.12">
+    <line x1="100" y1="240" x2="1152" y2="240"/>
+    <line x1="100" y1="340" x2="1152" y2="340"/>
+    <line x1="100" y1="440" x2="1152" y2="440"/>
+    <line x1="100" y1="540" x2="1152" y2="540"/>
+    <line x1="100" y1="640" x2="1152" y2="640"/>
+  </g>
+
+  <path d="M 100 600 L 220 566 L 330 588 L 430 512 L 540 534 L 650 448 L 750 468 L 860 366 L 960 392 L 1070 286 L 1152 300 L 1152 680 L 100 680 Z" fill="url(#area)"/>
+  <path d="M 100 600 L 220 566 L 330 588 L 430 512 L 540 534 L 650 448 L 750 468 L 860 366 L 960 392 L 1070 286 L 1152 300" fill="none" stroke="#2f5d7c" stroke-width="2.5"/>
+  <circle cx="1070" cy="286" r="7" fill="#7c1522"/>
+  <circle cx="1070" cy="286" r="18" fill="none" stroke="#7c1522" stroke-opacity="0.4"/>
+  <line x1="1070" y1="286" x2="1070" y2="680" stroke="#7c1522" stroke-opacity="0.3" stroke-dasharray="3 6"/>
+
+  <text x="100" y="228" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="84" letter-spacing="1" fill="#2f5d7c">16 CR+</text>
+  <text x="100" y="270" font-family="Courier New, monospace" font-size="12" letter-spacing="3.5" fill="#7c1522" fill-opacity="0.55">DEMAT ACCOUNTS · 70% TIER-2/3</text>
+
+  <text x="1152" y="742" text-anchor="end" font-family="Georgia, serif" font-size="280" letter-spacing="-10" fill="none" stroke="#2f5d7c" stroke-opacity="0.14" stroke-width="2">05</text>
+
+  <text x="48" y="742" font-family="Courier New, monospace" font-size="12" letter-spacing="3.5" fill="#7c1522" fill-opacity="0.6">THE NUMBERS BEHIND INVESTOR RESILIENCE</text>
+  <line x1="48" y1="756" x2="1152" y2="756" stroke="#7c1522" stroke-opacity="0.2"/>
+  <text x="48" y="778" font-family="Courier New, monospace" font-size="10" letter-spacing="3" fill="#7c1522" fill-opacity="0.45">SNTC · IIT (BHU) VARANASI × SEBI × NSDL</text>
+</svg>
