@@ -4,7 +4,7 @@
    ───────────────────────────────────────────────────────────── */
 
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://sangyan.copsiitbhu.co.in";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://sangyan.sntciitbhu.co.in";
 
 export const SITE = {
   brand: "SANGYAN",
@@ -13,11 +13,14 @@ export const SITE = {
   eventName: "SANGYAN Investor Resilience Hackathon",
   tagline: "The official posts archive of SANGYAN 2026",
   description:
-    "SANGYAN Posts is the official dispatch archive of the SANGYAN Investor Resilience Hackathon 2026 — winners, media coverage, announcements, and stories from SNTC, IIT (BHU) Varanasi with SEBI and NSDL.",
-  hackathonUrl: "https://sangyan.copsiitbhu.co.in",
-  problemStatementUrl: "https://sangyan.copsiitbhu.co.in/ps",
+    "SANGYAN Posts is the official dispatch archive of the SANGYAN Investor Resilience Hackathon 2026 — winners, media coverage, announcements, and stories from SNTC, IIT (BHU) Varanasi, which conducted the hackathon and supported SEBI and NSDL at the offline event.",
+  hackathonUrl: "https://sangyan.sntciitbhu.co.in",
+  problemStatementUrl: "https://sangyan.sntciitbhu.co.in/ps",
   organisation: "SNTC, IIT (BHU) Varanasi",
   collaborators: "SEBI & NSDL",
+  organiserRole:
+    "conducted the hackathon and supported SEBI & NSDL at the offline event",
+  venue: "Swatantrata Bhawan, IIT (BHU) Varanasi",
   year: "2026",
   volume: "VOL. 01",
   edition: "OCT 2026",

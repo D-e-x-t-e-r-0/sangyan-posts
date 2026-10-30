@@ -130,9 +130,9 @@ export default function PostsLedger({
         </button>
 
         <p className="filter-note">
-          Published by {SITE.organisation}
+          Conducted by {SITE.organisation}
           <br />
-          with {SITE.collaborators}
+          Supported {SITE.collaborators} at the offline event
         </p>
       </aside>
 

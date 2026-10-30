@@ -119,7 +119,6 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
               aria-label={slide.coverAlt}
               style={{ backgroundImage: `url("${slide.cover}")` }}
             />
-            <div className="spotlight-shade" aria-hidden="true" />
 
             <div className="spotlight-copy">
               <div className="spotlight-kicker">
@@ -145,7 +144,7 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
 
               <Link
                 href={`/posts/${slide.slug}`}
-                className="btn btn-paper"
+                className="btn btn-solid"
                 tabIndex={index === active ? undefined : -1}
               >
                 <span>Read the dispatch</span>

@@ -1,8 +1,9 @@
 # SANGYAN Posts
 
-The newsroom for SANGYAN, the investor resilience hackathon by SNTC, IIT (BHU)
-Varanasi in collaboration with SEBI and NSDL. A standalone Next.js app built as
-an editorial broadsheet: masthead, auto-advancing hero slideshow, and a
+The newsroom for SANGYAN, the investor resilience hackathon conducted by SNTC,
+IIT (BHU) Varanasi, which also supported SEBI and NSDL at the offline event at
+Swatantrata Bhawan, IIT (BHU) Varanasi. A standalone Next.js app built as an
+editorial broadsheet: masthead, auto-advancing hero slideshow, and a
 filterable dispatch ledger.
 
 ## Run locally
@@ -35,8 +36,8 @@ reload. `?category=` is read on first render so links into a specific desk work.
 
 All content lives in [`src/content/posts.ts`](src/content/posts.ts). To publish:
 
-1. Add a cover image to `public/posts/` (1200×800 works best). The cover appears
-   as the archive thumbnail.
+1. Add a cover image to `public/posts/` (landscape or square both work; the site
+   crops to fit). The cover appears as the archive thumbnail.
 2. Optionally add a separate wide, art-only hero image (1600×800 works best) for
    the homepage slideshow and the article banner. If `hero` is omitted, the
    cover is used in its place.
@@ -51,8 +52,8 @@ All content lives in [`src/content/posts.ts`](src/content/posts.ts). To publish:
   category: "announcements", // winners | media | announcements | stories
   date: "2026-10-09",        // YYYY-MM-DD, newest sorts first
   author: "SANGYAN Newsroom",
-  cover: "/posts/my-new-dispatch.svg",
-  hero: "/posts/hero-my-new-dispatch.svg", // optional
+  cover: "/posts/my-new-dispatch.jpg",
+  hero: "/posts/my-new-dispatch-hero.jpg", // optional
   coverAlt: "Describe the image for screen readers.",
   tags: ["Tag one", "Tag two"],
   featured: false,           // one post can lead the homepage slideshow
@@ -73,8 +74,9 @@ All content lives in [`src/content/posts.ts`](src/content/posts.ts). To publish:
 
 - `SiteHeader` renders the fixed top wire, centered masthead, and sticky index.
 - `HeroSlider` auto-advances every 7 seconds, with previous/next, pause/resume,
-  swipe, keyboard arrows, and a selectable filmstrip. Autoplay and the progress
-  bar are disabled for `prefers-reduced-motion`.
+  swipe, keyboard arrows, and a selectable filmstrip. It shows one post per
+  distinct cover image; every post remains in the archive below. Autoplay and
+  the progress bar are disabled for `prefers-reduced-motion`.
 - `PostsLedger` handles desk filters and search over the full archive.
 - Article pages add a byline rail, drop cap, and related dispatches.
 
@@ -87,11 +89,10 @@ name is decided.
 
 ## Notes
 
-- Placeholder covers and hero art are local SVGs in `public/posts/`. Replace
-  them with real images (JPG/PNG/SVG) and update each post's `cover` and `hero`
-  paths.
+- Current covers are the event photos in `public/posts/`. Add real images and
+  update each post's `cover` (and optional `hero`) path.
 - The organiser/collaborator logos are copied from the hackathon site.
 - No database is required. Publishing is a file change plus a deploy.
 - Before launch, set `NEXT_PUBLIC_SITE_URL` (e.g. in Vercel) to the production
   origin. It drives `metadataBase`, `robots.txt`, and `sitemap.xml`. The fallback
-  is `https://sangyan.copsiitbhu.co.in`.
+  is `https://sangyan.sntciitbhu.co.in`.

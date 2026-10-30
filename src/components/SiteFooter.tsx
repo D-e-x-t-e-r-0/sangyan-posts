@@ -51,7 +51,7 @@ export default function SiteFooter() {
       </div>
 
       <div className="footer-logos">
-        <span className="footer-logos-label">Organised by</span>
+        <span className="footer-logos-label">Conducted by</span>
         <div className="footer-logo-row">
           <div
             className="footer-logo logo-sntc"
@@ -66,7 +66,7 @@ export default function SiteFooter() {
           <div className="footer-logo logo-nsdl" role="img" aria-label="NSDL" />
         </div>
         <span className="footer-logos-note">
-          {SITE.organisation} · in collaboration with {SITE.collaborators}
+          {SITE.organisation} {SITE.organiserRole}
         </span>
       </div>
 
@@ -78,7 +78,7 @@ export default function SiteFooter() {
         <span>
           © {SITE.year} SNTC, IIT (BHU) Varanasi · SEBI · NSDL
         </span>
-        <span>Compiled in Varanasi, India</span>
+        <span>{SITE.venue}</span>
         <span>{SITE.volume} · {SITE.edition}</span>
       </div>
     </footer>

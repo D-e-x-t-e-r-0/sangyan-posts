@@ -31,16 +31,26 @@ export default async function Home({ searchParams }: HomePageProps) {
     ...posts.filter((post) => post.slug !== featured.slug),
   ];
 
-  const slides: HeroSlide[] = ordered.map((post) => ({
-    slug: post.slug,
-    title: post.title,
-    excerpt: post.excerpt,
-    category: CATEGORY_META[post.category].label,
-    date: formatDate(post.date),
-    cover: post.hero ?? post.cover,
-    coverAlt: post.coverAlt,
-    readTime: getReadTime(post),
-  }));
+  // The slideshow shows each available image once; every post still appears
+  // in the archive below.
+  const usedArt = new Set<string>();
+  const slides: HeroSlide[] = ordered
+    .filter((post) => {
+      const art = post.hero ?? post.cover;
+      if (usedArt.has(art)) return false;
+      usedArt.add(art);
+      return true;
+    })
+    .map((post) => ({
+      slug: post.slug,
+      title: post.title,
+      excerpt: post.excerpt,
+      category: CATEGORY_META[post.category].label,
+      date: formatDate(post.date),
+      cover: post.hero ?? post.cover,
+      coverAlt: post.coverAlt,
+      readTime: getReadTime(post),
+    }));
 
   const wire = posts.slice(0, 3);
 
@@ -63,7 +73,7 @@ export default async function Home({ searchParams }: HomePageProps) {
             </div>
             <p className="lead-deck">
               The official record of what was built, who built it, and what
-              happens next — compiled by SANGYAN Posts at IIT (BHU) Varanasi.
+              happens next — compiled by SANGYAN Posts at {SITE.venue}.
             </p>
             <span className="lead-edition">
               {String(posts.length).padStart(2, "0")} dispatches · last updated{" "}
@@ -93,7 +103,7 @@ export default async function Home({ searchParams }: HomePageProps) {
           <div className="record-cell">
             <span className="record-index">04</span>
             <span className="record-value">IIT (BHU)</span>
-            <span className="record-label">Varanasi · in collaboration</span>
+            <span className="record-label">Swatantrata Bhawan · Varanasi</span>
           </div>
         </section>
 
@@ -175,9 +185,10 @@ export default async function Home({ searchParams }: HomePageProps) {
             </p>
             <div className="afterword-foot">
               <p>
-                SANGYAN is organised by {SITE.organisation}, in collaboration
-                with {SITE.collaborators}. This archive is maintained by the
-                SANGYAN media team.
+                SANGYAN was conducted by {SITE.organisation}, which also
+                supported {SITE.collaborators} at the offline event held at{" "}
+                {SITE.venue}. This archive is maintained by the SANGYAN media
+                team.
               </p>
               <a
                 href={SITE.hackathonUrl}

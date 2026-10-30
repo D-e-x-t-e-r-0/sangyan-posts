@@ -16,6 +16,8 @@ export const metadata: Metadata = {
     "SANGYAN media",
     "investor resilience hackathon",
     "SNTC IIT BHU",
+    "SNTC IIT BHU Varanasi",
+    "Swatantrata Bhawan",
     "SEBI",
     "NSDL",
     "financial literacy India",

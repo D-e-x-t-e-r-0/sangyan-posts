@@ -16,6 +16,7 @@ export default function SiteHeader({
   const wire = posts.slice(0, 4);
   const doubled = [...wire, ...wire];
   const latestDate = posts[0] ? formatDate(posts[0].date) : SITE.edition;
+  const hackathonHost = SITE.hackathonUrl.replace(/^https?:\/\//, "");
 
   return (
     <>
@@ -56,6 +57,7 @@ export default function SiteHeader({
               {String(posts.length).padStart(2, "0")} dispatches on record
             </span>
             <span>{SITE.place}</span>
+            <span>{SITE.venue}</span>
           </div>
 
           <Link href="/" className="masthead-mark" aria-label={`${SITE.fullName} home`}>
@@ -71,11 +73,13 @@ export default function SiteHeader({
               rel="noopener noreferrer"
               className="masthead-side-link"
             >
-              sangyan.copsiitbhu.co.in
+              {hackathonHost}
               <IconArrowUpRight size={11} />
             </a>
             <span className="masthead-side-credit">
-              with {SITE.collaborators}
+              Conducted by {SITE.organisation}
+              <br />
+              {SITE.collaborators} supported at the offline event
             </span>
           </div>
         </div>

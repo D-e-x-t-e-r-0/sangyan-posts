@@ -84,15 +84,14 @@ export const POSTS: Post[] = [
     category: "winners",
     date: "2026-10-08",
     author: "SANGYAN Newsroom",
-    cover: "/posts/cover-winners.svg",
-    hero: "/posts/hero-winners.svg",
+    cover: "/posts/winners-first-place.jpg",
     coverAlt:
-      "Abstract maroon and gold editorial cover marking the SANGYAN 2026 winners announcement.",
+      "The SANGYAN 2026 first-place team holding a ₹1,00,000 winner's cheque on stage at Swatantrata Bhawan, IIT (BHU) Varanasi.",
     tags: ["Winners", "Jury", "Results"],
     body: [
       {
         type: "p",
-        text: "SANGYAN 2026 has concluded. After a seven-day build sprint, a shortlisting round, and a final jury presentation at IIT (BHU) Varanasi, three teams have been recognised for work that meaningfully strengthens investor resilience.",
+        text: "SANGYAN 2026 has concluded. After a seven-day build sprint, a shortlisting round, and a final jury presentation at Swatantrata Bhawan, IIT (BHU) Varanasi, three teams have been recognised for work that meaningfully strengthens investor resilience.",
       },
       {
         type: "p",
@@ -127,10 +126,9 @@ export const POSTS: Post[] = [
     category: "winners",
     date: "2026-10-07",
     author: "SNTC Media Desk",
-    cover: "/posts/cover-jury.svg",
-    hero: "/posts/hero-jury.svg",
+    cover: "/posts/winners-first-place.jpg",
     coverAlt:
-      "Editorial cover with a maroon geometric arch and the label jury notes.",
+      "The winning team at the SANGYAN 2026 awards ceremony with their ₹1,00,000 prize cheque.",
     tags: ["Jury", "Product", "Evaluation"],
     featured: true,
     body: [
@@ -169,10 +167,9 @@ export const POSTS: Post[] = [
     category: "media",
     date: "2026-10-06",
     author: "SANGYAN Newsroom",
-    cover: "/posts/cover-press.svg",
-    hero: "/posts/hero-press.svg",
+    cover: "/posts/guest-felicitate.jpg",
     coverAlt:
-      "Editorial cover styled as a newspaper front page in maroon and parchment.",
+      "NSDL MD Vijay Chandok presents a memento to SEBI Whole Time Member Kamlesh Chandra Varshney at World Investor Week 2026 at Swatantrata Bhawan, IIT (BHU) Varanasi.",
     tags: ["Press", "Media kit", "Coverage"],
     body: [
       {
@@ -190,7 +187,8 @@ export const POSTS: Post[] = [
           "Event: SANGYAN — Investor Resilience Hackathon 2026",
           "Dates: 01–07 October 2026",
           "Organiser: SNTC, IIT (BHU) Varanasi",
-          "In collaboration with: SEBI and NSDL",
+          "Organiser role: Conducted the hackathon and supported SEBI & NSDL at the offline event",
+          "Venue: Swatantrata Bhawan, IIT (BHU) Varanasi",
           "Format: 7-day build sprint, 5 focus tracks plus 1 open track",
           "Prize pool: ₹1,70,000 across the top three teams",
         ],
@@ -210,10 +208,9 @@ export const POSTS: Post[] = [
     category: "announcements",
     date: "2026-10-05",
     author: "Organising Committee",
-    cover: "/posts/cover-archive.svg",
-    hero: "/posts/hero-archive.svg",
+    cover: "/posts/problem-statement.jpg",
     coverAlt:
-      "Editorial cover showing a stack of archival documents in green and parchment.",
+      "Cover of the SANGYAN Problem Statement and Participant Charter, presented by SNTC, IIT (BHU) Varanasi, with SEBI and NSDL.",
     tags: ["Archive", "Problem statement", "Open access"],
     body: [
       {
@@ -249,10 +246,9 @@ export const POSTS: Post[] = [
     category: "stories",
     date: "2026-10-04",
     author: "SANGYAN Newsroom",
-    cover: "/posts/cover-numbers.svg",
-    hero: "/posts/hero-numbers.svg",
+    cover: "/posts/event-poster.jpg",
     coverAlt:
-      "Editorial cover with a rising data chart and oversized numerals in blue and maroon.",
+      "SANGYAN event poster featuring the hackathon brief and build-sprint dates.",
     tags: ["Data", "SEBI", "Investor behaviour"],
     body: [
       {
@@ -288,19 +284,18 @@ export const POSTS: Post[] = [
     title: "Photo Essay: Seven Days at IIT (BHU)",
     ticker: "SEVEN DAYS IN VARANASI",
     excerpt:
-      "Whiteboard sessions, late-night demos, and the final jury round — a visual record of the build sprint in Varanasi.",
+      "Whiteboard sessions, late-night demos, and the final jury round — a visual record of the build sprint at Swatantrata Bhawan, IIT (BHU) Varanasi.",
     category: "media",
     date: "2026-10-03",
     author: "SNTC Media Desk",
-    cover: "/posts/cover-photo.svg",
-    hero: "/posts/hero-photo.svg",
+    cover: "/posts/guest-felicitate.jpg",
     coverAlt:
-      "Editorial cover with a camera aperture motif in gold and maroon.",
+      "Guests and organisers at the SANGYAN 2026 felicitation ceremony at Swatantrata Bhawan, IIT (BHU) Varanasi.",
     tags: ["Photo essay", "IIT BHU", "Build sprint"],
     body: [
       {
         type: "p",
-        text: "Seven days is a short time to build something worth trusting. The week at IIT (BHU) Varanasi moved between orientation, sprint reviews, and a final round of presentations, with teams working through the night between each checkpoint.",
+        text: "Seven days is a short time to build something worth trusting. The week at Swatantrata Bhawan, IIT (BHU) Varanasi moved between orientation, sprint reviews, and a final round of presentations, with teams working through the night between each checkpoint.",
       },
       { type: "h2", text: "The week in frames" },
       {
